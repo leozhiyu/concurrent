@@ -16,7 +16,6 @@ public class ParallelComputing {
         getPrime(2,200000);
         long end = System.currentTimeMillis();
         System.out.println(end-start);
-
         // 并行计算素数
         ExecutorService executorService = Executors.newFixedThreadPool(4);
         MyCallable m1 = new MyCallable(2,80000);
